@@ -141,7 +141,8 @@ let sortBMWAudi = inventory.filter (function(car) {
     }
 });
 
-console.log(BMWAndAudi);
+let myJSON = JSON.stringify(BMWAndAudi);
+console.log(myJSON);
 
 
 
