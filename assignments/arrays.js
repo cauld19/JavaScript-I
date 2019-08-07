@@ -66,7 +66,7 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 let result = inventory.filter (function(car) {
     if (car.id === 33) {
-        console.log("Car 33 is a " + car.car_year + " " + car.car_make + " " + car.car_model);
+        console.log(`Car 33 is a ${car.car_year} ${car.car_make} ${car.car_model}`);
     }
 });
 
@@ -92,13 +92,12 @@ let carModels = [];
 let sortCars = inventory.sort (function(a,b) {
     if (a.car_model < b.car_model) {
         return -1;
-    } else{
+    } else {
         return 1;
     }
 });
 
 carModels.push(sortCars);
-
 console.log(carModels);
 
 
